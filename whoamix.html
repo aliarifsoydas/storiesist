@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* FONTS */
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: url('webfonts/DINNextLTPro-Light.eot');
+    src: url('webfonts/DINNextLTPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('webfonts/DINNextLTPro-Light.woff2') format('woff2'),
+        url('webfonts/DINNextLTPro-Light.woff') format('woff'),
+        url('webfonts/DINNextLTPro-Light.ttf') format('truetype'),
+        url('webfonts/DINNextLTPro-Light.svg#DINNextLTPro-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+	
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: url('DINNextLTPro-Medium.eot');
+    src: url('DINNextLTPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('DINNextLTPro-Medium.woff2') format('woff2'),
+        url('DINNextLTPro-Medium.woff') format('woff'),
+        url('DINNextLTPro-Medium.ttf') format('truetype'),
+        url('DINNextLTPro-Medium.svg#DINNextLTPro-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: url('DINNextLTPro-Black.eot');
+    src: url('DINNextLTPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('DINNextLTPro-Black.woff2') format('woff2'),
+        url('DINNextLTPro-Black.woff') format('woff'),
+        url('DINNextLTPro-Black.ttf') format('truetype'),
+        url('DINNextLTPro-Black.svg#DINNextLTPro-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+	
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: url('DINNextLTPro-Bold.eot');
+    src: url('DINNextLTPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('DINNextLTPro-Bold.woff2') format('woff2'),
+        url('DINNextLTPro-Bold.woff') format('woff'),
+        url('DINNextLTPro-Bold.ttf') format('truetype'),
+        url('DINNextLTPro-Bold.svg#DINNextLTPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* FONTS */
+
+body {
+	margin:0;
+	background:none transparent;
+
+}
+
+
+/* WHOAMI */
+
+
+@media screen and (min-width: 1250px) {
+
+#whoamimobil {
+	display:none;
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	
+#whoami {
+	display:none;
+}
+
+
+#whoamimobil {
+	height:120%;
+	width:80%;
+	position:absolute;
+	top:15%;
+	left:10%;
+	background:linear-gradient(to top, rgba(0,0,0,0), rgba(5,50,105,0.95));
+	border-radius: 15px;
+	padding:20px;
+}
+
+#whoamimobil .context {
+	margin-top:35px;
+	margin-right:55px;
+	float:right;
+	width:470px;
+}
+
+#whoamimobil .hoodtext {
+	float:left;
+	font-family: 'DIN Next LT Pro'; font-weight: 300; font-style: normal;
+	font-size:35px;
+	color: #d6d3d3;
+	letter-spacing: 1px;
+}
+	
+#whoamimobil .close {
+	float:right;
+	margin-top:8px;
+}
+	
+#whoamimobil .text {
+	float:left;
+	text-align: justify;
+    text-justify: inter-word;
+	color: #d6d3d3;
+	font-family: 'DIN Next LT Pro'; font-weight: 300; font-style: normal;
+	font-size:12.4px;
+	margin-top:-7px;
+	overflow:hidden;
+}
+
+}
+
+	
+#whoami {
+	z-index:10;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-195px;
+	margin-left:-442px;
+	width:885px;
+	height:370px;
+    border-radius: 15px;
+	background:#000;
+	background:url(images/whoamibg.png) no-repeat;
+	background-size:cover;
+}
+
+#whoami .context {
+	margin-top:35px;
+	margin-right:55px;
+	float:right;
+	width:470px;
+}
+
+#whoami .hoodtext {
+	float:left;
+	font-family: 'DIN Next LT Pro'; font-weight: 300; font-style: normal;
+	font-size:35px;
+	color: #d6d3d3;
+	letter-spacing: 1px;
+}
+	
+#whoami .close {
+	float:right;
+	margin-top:8px;
+}
+	
+#whoami .text {
+	float:left;
+	text-align: justify;
+    text-justify: inter-word;
+	color: #d6d3d3;
+	font-family: 'DIN Next LT Pro'; font-weight: 300; font-style: normal;
+	font-size:12.4px;
+	margin-top:-7px;
+	overflow:hidden;
+}
+	
+b { font-family: 'DIN Next LT Pro';
+    font-weight: 500;
+    font-style: normal;
+}
+
+strong {
+	font-family: 'DIN Next LT Pro';
+	font-weight: 900;
+    font-style: normal;
+}
+
+/* WHOAMI */
+
+</style>
+<body>
+<div id="whoami"> 
+<div class="context">
+<div class="hood"> <div class="hoodtext"> who<b>am</b><strong>i?</strong></div> <div class="close"><a href="#"><img src="images/close.png" width="21px" height="21px"></a></div> </div>
+<div class="text">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor dictum dui, vel pulvinar lectus dignissim nec. Vestibulum diam augue, condimentum eget consequat nec, fermentum mattis enim. Ut id velit orci. In porta mauris id vestibulum mattis. Aliquam sit amet tortor eget arcu lobortis ullamcorper. Quisque at arcu molestie, venenatis dui vitae, rutrum justo. Maecenas vehicula ipsum quis justo luctus tincidunt. Vestibulum rhoncus magna tristique magna ultrices, at convallis quam vestibulum. Suspendisse bibendum vel mi at pretium. Ut rutrum ex metus, sed convallis lacus ullamcorper et. Etiam tempus accumsan odio, quis auctor risus varius at. Vestibulum facilisis rhoncus dui et maximus. Sed accumsan est quis quam eleifend, vitae rhoncus turpis fringilla. Aliquam hendrerit posuere iaculis.</p>
+
+<p>Donec quis lacus quis enim ultrices consectetur eu sed diam. Praesent sit amet dui risus. Nulla interdum fringilla sem vitae sodales. Morbi sit amet vehicula quam, ut elementum lorem. Morbi id turpis cursus, tempor lorem nec, efficitur nisi. Pellentesque tincidunt lectus sed diam porttitor, ac consectetur erat tincidunt. Aenean tincidunt volutpat tellus, in tempor tellus tincidunt varius. Nullam arcu arcu, ullamcorper sodales dolor vel, dignissim malesuada metus. Cras quis dolor maximus, tincidunt libero a, tristique massa. Sed tempus non velit semper tincidunt.</p>
+
+</div>
+</div>
+</div>
+<div id="whoamimobil"> 
+<div class="hood"> <div class="hoodtext"> who<b>am</b><strong>i?</strong></div> <div class="close"><a href="#"><img src="images/close.png" width="21px" height="21px"></a></div> </div>
+<div class="text">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor dictum dui, vel pulvinar lectus dignissim nec. Vestibulum diam augue, condimentum eget consequat nec, fermentum mattis enim. Ut id velit orci. In porta mauris id vestibulum mattis. Aliquam sit amet tortor eget arcu lobortis ullamcorper. Quisque at arcu molestie, venenatis dui vitae, rutrum justo. Maecenas vehicula ipsum quis justo luctus tincidunt. Vestibulum rhoncus magna tristique magna ultrices, at convallis quam vestibulum. Suspendisse bibendum vel mi at pretium. Ut rutrum ex metus, sed convallis lacus ullamcorper et. Etiam tempus accumsan odio, quis auctor risus varius at. Vestibulum facilisis rhoncus dui et maximus. Sed accumsan est quis quam eleifend, vitae rhoncus turpis fringilla. Aliquam hendrerit posuere iaculis.</p>
+
+<p>Donec quis lacus quis enim ultrices consectetur eu sed diam. Praesent sit amet dui risus. Nulla interdum fringilla sem vitae sodales. Morbi sit amet vehicula quam, ut elementum lorem. Morbi id turpis cursus, tempor lorem nec, efficitur nisi. Pellentesque tincidunt lectus sed diam porttitor, ac consectetur erat tincidunt. Aenean tincidunt volutpat tellus, in tempor tellus tincidunt varius. Nullam arcu arcu, ullamcorper sodales dolor vel, dignissim malesuada metus. Cras quis dolor maximus, tincidunt libero a, tristique massa. Sed tempus non velit semper tincidunt.</p>
+</div>
+
+
+</body>
+</html>
