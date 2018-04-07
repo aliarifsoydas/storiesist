@@ -1,0 +1,61 @@
+ <!--
+
+  #so{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+  }
+
+  #playSound{margin-left:5px; margin-top:3px; width:35px; height:35px;
+  }
+
+  #stopSound{ margin-left:2px; margin-top:3px;  width:35px; height:35px;
+      
+  }
+  
+    -->
+
+	
+#radiobutton {
+	position:Absolute;
+	position:fixed;
+	bottom:-30px;
+	right:21%;
+	width:70px;
+	height:100px;
+	border-radius:25px;
+	background:#141414;
+	z-index:999;
+	color:grey;
+	transition:all 0.8s;
+}
+
+#radiobutton:hover {
+	width:250px;
+}
+
+#radiobutton .radio { 
+	float:right; 
+	margin:15px;
+	width:40px;
+	height:40px;
+	background:#d6d3d3;
+	border-radius:40px;
+	-webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+}
+
+#radiobutton .radiotext {
+	color:#d6d3d3;
+	height:50px;
+	width:160px;
+	float:left; 
+	margin-left:15px;
+	margin-top:18px;
+	transition:all 1.5s;
+	font-family: 'DIN Next LT Pro';
+	font-weight: 300;
+	font-style: normal;
+	font-size:12.4px; 
+}
