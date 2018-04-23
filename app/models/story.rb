@@ -8,4 +8,11 @@ class Story < ApplicationRecord
   # add a delete_<image_name> method: 
   attr_accessor :delete_media
   before_validation { self.media.clear if self.delete_media == '1' }
+
+
+  after_initialize do
+    if new_record?
+      self.order ||= Story.last.order + 1
+    end
+  end
 end

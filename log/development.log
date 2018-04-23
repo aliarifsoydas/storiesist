@@ -27045,3 +27045,1243 @@ Processing by RailsAdmin::MainController#index as HTML
 Completed 200 OK in 266ms (Views: 255.9ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/admin" for 127.0.0.1 at 2018-04-23 20:04:06 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_storage_attachments"[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record.rb:43
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" ORDER BY "active_storage_attachments"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/config/actions/dashboard.rb:34
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_storage_blobs"[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record.rb:43
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" ORDER BY "active_storage_blobs"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/config/actions/dashboard.rb:34
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stories"[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record.rb:43
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY "stories"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/config/actions/dashboard.rb:34
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record.rb:43
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/config/actions/dashboard.rb:34
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (26.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/_navigation.html.haml (14.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (3.3ms)
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/pjax.html.haml (3.9ms)
+Completed 200 OK in 1315ms (Views: 870.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/admin/story?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:04:10 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"story"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (89.1ms)
+Completed 200 OK in 131ms (Views: 123.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/story/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:04:11 +0300
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"story"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (4.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_file_upload.html.haml (6.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_submit_buttons.html.haml (9.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (71.0ms)
+Completed 200 OK in 105ms (Views: 96.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/admin/story/new" for 127.0.0.1 at 2018-04-23 20:04:26 +0300
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wb8vBZy8I31LsY/4XKwqQlTwoMpjdtMzAN4oDFl+yEiu6xuHCiwh1N6Dr/dGThGpUvTvPZGevHmBgEWCYYKBFg==", "story"=>{"name"=>"", "description"=>"", "media"=>#<ActionDispatch::Http::UploadedFile:0x00007fd00ed107f0 @tempfile=#<Tempfile:/var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/RackMultipart20180423-73764-95fkfd.png>, @original_filename="Screen Shot 2018-04-22 at 22.50.34.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"story[media]\"; filename=\"Screen Shot 2018-04-22 at 22.50.34.png\"\r\nContent-Type: image/png\r\n">, "order"=>"4"}, "return_to"=>"http://localhost:3000/admin/story", "_save"=>"", "model_name"=>"story"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+[paperclip] Trying to link /var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/RackMultipart20180423-73764-95fkfd.png to /var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/b79ed7d342e129522488fa3d2144e75b20180423-73764-1t7n4xd.png
+[paperclip] Trying to link /var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/b79ed7d342e129522488fa3d2144e75b20180423-73764-1t7n4xd.png to /var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/d14673fc1d689e844850a00ee2486dd920180423-73764-1bp6m26.png
+Command :: file -b --mime '/var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/d14673fc1d689e844850a00ee2486dd920180423-73764-1bp6m26.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/b79ed7d342e129522488fa3d2144e75b20180423-73764-1t7n4xd.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/b79ed7d342e129522488fa3d2144e75b20180423-73764-1t7n4xd.png[0]'
+Command :: convert '/var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/b79ed7d342e129522488fa3d2144e75b20180423-73764-1t7n4xd.png[0]' -auto-orient -resize "x100" -crop "100x100+30+0" +repage '/var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/8107147ebba0f466505aad66c36d08e220180423-73764-1qs1nbz'
+[paperclip] Trying to link /var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/8107147ebba0f466505aad66c36d08e220180423-73764-1qs1nbz to /var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/f5f3a151610763d9ba885bbf169b9e8420180423-73764-1mqoq01
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/b79ed7d342e129522488fa3d2144e75b20180423-73764-1t7n4xd.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/b79ed7d342e129522488fa3d2144e75b20180423-73764-1t7n4xd.png[0]'
+Command :: convert '/var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/b79ed7d342e129522488fa3d2144e75b20180423-73764-1t7n4xd.png[0]' -auto-orient -resize "150x150>" '/var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/8107147ebba0f466505aad66c36d08e220180423-73764-modfqn'
+[paperclip] Trying to link /var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/8107147ebba0f466505aad66c36d08e220180423-73764-modfqn to /var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/f3853387f37997a7de84474343a9422a20180423-73764-przziq
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/b79ed7d342e129522488fa3d2144e75b20180423-73764-1t7n4xd.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/b79ed7d342e129522488fa3d2144e75b20180423-73764-1t7n4xd.png[0]'
+Command :: convert '/var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/b79ed7d342e129522488fa3d2144e75b20180423-73764-1t7n4xd.png[0]' -auto-orient -resize "200x200" '/var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/8107147ebba0f466505aad66c36d08e220180423-73764-refx35'
+[paperclip] Trying to link /var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/8107147ebba0f466505aad66c36d08e220180423-73764-refx35 to /var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/d12ec5a6faef364a66f824840d016eb120180423-73764-13zxuph
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record/abstract_object.rb:23
+[paperclip] Trying to link /var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/b79ed7d342e129522488fa3d2144e75b20180423-73764-1t7n4xd.png to /var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/d14673fc1d689e844850a00ee2486dd920180423-73764-1sqwnci.png
+Command :: file -b --mime '/var/folders/f3/_9p6p51s5t9c6wh2fxq93sph0000gn/T/d14673fc1d689e844850a00ee2486dd920180423-73764-1sqwnci.png'
+  [1m[36mStory Create (0.6ms)[0m  [1m[32mINSERT INTO "stories" ("name", "description", "created_at", "updated_at", "media_file_name", "media_content_type", "media_file_size", "media_updated_at", "order") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["description", ""], ["created_at", "2018-04-23 17:04:28.012231"], ["updated_at", "2018-04-23 17:04:28.012231"], ["media_file_name", "Screen_Shot_2018-04-22_at_22.50.34.png"], ["media_content_type", "image/png"], ["media_file_size", 1197120], ["media_updated_at", "2018-04-23 17:04:26.660745"], ["order", 4]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record/abstract_object.rb:23
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record/abstract_object.rb:23
+Redirected to http://localhost:3000/admin/story
+Completed 302 Found in 1379ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/admin/story" for 127.0.0.1 at 2018-04-23 20:04:28 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (54.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/_navigation.html.haml (13.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (4.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/pjax.html.haml (5.5ms)
+Completed 200 OK in 234ms (Views: 226.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/story?model_name=story&set=1&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:04:33 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story", "set"=>"1", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (56.2ms)
+Completed 200 OK in 93ms (Views: 82.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/story?model_name=story&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:04:36 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (55.6ms)
+Completed 200 OK in 87ms (Views: 78.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories" for 127.0.0.1 at 2018-04-23 20:04:41 +0300
+Processing by StoriesController#index as HTML
+  Rendering stories/index.html.erb within layouts/application
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories" ORDER BY "stories"."order" ASC[0m
+  ↳ app/views/stories/index.html.erb:103
+  Rendered stories/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 229ms (Views: 225.5ms | ActiveRecord: 0.4ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stories.jpg"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.0) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.0) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.0) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.0) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/workers/service-worker.js"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.0) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.0) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.0) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.0) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/story/4/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:04:52 +0300
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"story", "id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = ? ORDER BY "stories"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record.rb:16
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_file_upload.html.haml (8.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_submit_buttons.html.haml (7.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (58.6ms)
+Completed 200 OK in 96ms (Views: 85.6ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/admin/story/4/edit" for 127.0.0.1 at 2018-04-23 20:04:55 +0300
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8QDxQKhO/0SmcROE5zUxLCb/HhgX1LAZyB25T7VspRAKw5FKETCq+0OpwQR5cuhXco7+lVAi51pmhrTn3G2IiQ==", "story"=>{"name"=>"", "description"=>"", "delete_media"=>"0", "order"=>"1"}, "return_to"=>"http://localhost:3000/admin/story?model_name=story", "_save"=>"", "model_name"=>"story", "id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = ? ORDER BY "stories"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record/abstract_object.rb:23
+  [1m[36mStory Update (0.4ms)[0m  [1m[33mUPDATE "stories" SET "order" = ?, "updated_at" = ? WHERE "stories"."id" = ?[0m  [["order", 1], ["updated_at", "2018-04-23 17:04:55.192354"], ["id", 4]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record/abstract_object.rb:23
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record/abstract_object.rb:23
+Redirected to http://localhost:3000/admin/story?model_name=story
+Completed 302 Found in 22ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/admin/story?model_name=story" for 127.0.0.1 at 2018-04-23 20:04:55 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (72.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/_secondary_navigation.html.haml (6.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/_navigation.html.haml (27.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (7.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/pjax.html.haml (12.2ms)
+Completed 200 OK in 350ms (Views: 337.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stories" for 127.0.0.1 at 2018-04-23 20:04:57 +0300
+Processing by StoriesController#index as HTML
+  Rendering stories/index.html.erb within layouts/application
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories" ORDER BY "stories"."order" ASC[0m
+  ↳ app/views/stories/index.html.erb:103
+  Rendered stories/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 144ms (Views: 135.6ms | ActiveRecord: 0.2ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stories.jpg"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.0) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.0) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.0) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.0) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/workers/service-worker.js"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.0) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.0) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.0) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.0) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/story/4/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:05:00 +0300
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"story", "id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = ? ORDER BY "stories"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record.rb:16
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (2.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_file_upload.html.haml (4.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_submit_buttons.html.haml (7.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (57.1ms)
+Completed 200 OK in 95ms (Views: 81.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/story/4/delete?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:05:06 +0300
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"story", "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = ? ORDER BY "stories"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record.rb:16
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/delete.html.haml within layouts/rails_admin/pjax
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_delete_notice.html.haml (3.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/delete.html.haml within layouts/rails_admin/pjax (18.2ms)
+Completed 200 OK in 61ms (Views: 50.6ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/admin/story/4/delete" for 127.0.0.1 at 2018-04-23 20:05:07 +0300
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pJTs2sX7MAZQv3U+62oGU0P4q9YQCdAaPs/Kiy0BSCmMhFzp2evsJiizTJKZScO1+UPxJpZxveIE6puzJ8vwhA==", "return_to"=>"http://localhost:3000/admin/story/4/edit", "model_name"=>"story", "id"=>"4"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = ? ORDER BY "stories"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record/abstract_object.rb:27
+  [1m[36mStory Destroy (0.5ms)[0m  [1m[31mDELETE FROM "stories" WHERE "stories"."id" = ?[0m  [["id", 4]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record/abstract_object.rb:27
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record/abstract_object.rb:27
+[paperclip] deleting /Users/trn13/Documents/development/storiesist/public/system/stories/media/000/000/004/original/Screen_Shot_2018-04-22_at_22.50.34.png
+[paperclip] deleting /Users/trn13/Documents/development/storiesist/public/system/stories/media/000/000/004/thumb/Screen_Shot_2018-04-22_at_22.50.34.png
+[paperclip] deleting /Users/trn13/Documents/development/storiesist/public/system/stories/media/000/000/004/small/Screen_Shot_2018-04-22_at_22.50.34.png
+[paperclip] deleting /Users/trn13/Documents/development/storiesist/public/system/stories/media/000/000/004/medium/Screen_Shot_2018-04-22_at_22.50.34.png
+Redirected to http://localhost:3000/admin/story
+Completed 302 Found in 30ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/admin/story" for 127.0.0.1 at 2018-04-23 20:05:07 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (49.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/_navigation.html.haml (17.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (4.6ms)
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/pjax.html.haml (6.0ms)
+Completed 200 OK in 268ms (Views: 260.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories" for 127.0.0.1 at 2018-04-23 20:05:09 +0300
+Processing by StoriesController#index as HTML
+  Rendering stories/index.html.erb within layouts/application
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories" ORDER BY "stories"."order" ASC[0m
+  ↳ app/views/stories/index.html.erb:103
+  Rendered stories/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 115ms (Views: 111.4ms | ActiveRecord: 0.2ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stories.jpg"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.0) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.0) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.0) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.0) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/workers/service-worker.js"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.0) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.0) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.0) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.0) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/story?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:05:12 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"story"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (62.0ms)
+Completed 200 OK in 96ms (Views: 85.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/story?model_name=story&utf8=%E2%9C%93&f%5Border%5D%5B31183%5D%5Bo%5D=default&f%5Border%5D%5B31183%5D%5Bv%5D%5B%5D=1&f%5Border%5D%5B31183%5D%5Bv%5D%5B%5D=&f%5Border%5D%5B31183%5D%5Bv%5D%5B%5D=&query=&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:05:24 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story", "utf8"=>"✓", "f"=>{"order"=>{"31183"=>{"o"=>"default", "v"=>["1", "", ""]}}}, "query"=>"", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.8ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE ((stories.order = 1)) ORDER BY stories.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (55.7ms)
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: near "order": syntax error: SELECT  "stories".* FROM "stories" WHERE ((stories.order = 1)) ORDER BY stories.id desc LIMIT ? OFFSET ?):
+    92:             %th.other.right.shrink= "..."
+    93:           %th.last.shrink
+    94:       %tbody
+    95:         - @objects.each do |object|
+    96:           %tr{class: "#{@abstract_model.param_key}_row #{@model_config.list.with(object: object).row_css_class}"}
+    97:             - if checkboxes
+    98:               %td= check_box_tag "bulk_ids[]", object.id, false
+  
+sqlite3 (1.3.13) lib/sqlite3/database.rb:91:in `initialize'
+sqlite3 (1.3.13) lib/sqlite3/database.rb:91:in `new'
+sqlite3 (1.3.13) lib/sqlite3/database.rb:91:in `prepare'
+activerecord (5.2.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:216:in `block (2 levels) in exec_query'
+activesupport (5.2.0) lib/active_support/dependencies/interlock.rb:48:in `block in permit_concurrent_loads'
+activesupport (5.2.0) lib/active_support/concurrency/share_lock.rb:187:in `yield_shares'
+activesupport (5.2.0) lib/active_support/dependencies/interlock.rb:47:in `permit_concurrent_loads'
+activerecord (5.2.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:213:in `block in exec_query'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:579:in `block (2 levels) in log'
+/usr/local/Cellar/ruby/2.5.0/lib/ruby/2.5.0/monitor.rb:226:in `mon_synchronize'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:578:in `block in log'
+activesupport (5.2.0) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:569:in `log'
+activerecord (5.2.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:212:in `exec_query'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/database_statements.rb:465:in `select'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/database_statements.rb:57:in `select_all'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/query_cache.rb:99:in `block in select_all'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/query_cache.rb:122:in `block in cache_sql'
+/usr/local/Cellar/ruby/2.5.0/lib/ruby/2.5.0/monitor.rb:226:in `mon_synchronize'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/query_cache.rb:108:in `cache_sql'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/query_cache.rb:99:in `select_all'
+activerecord (5.2.0) lib/active_record/querying.rb:41:in `find_by_sql'
+activerecord (5.2.0) lib/active_record/relation.rb:554:in `block in exec_queries'
+activerecord (5.2.0) lib/active_record/relation.rb:578:in `skip_query_cache_if_necessary'
+activerecord (5.2.0) lib/active_record/relation.rb:542:in `exec_queries'
+activerecord (5.2.0) lib/active_record/relation.rb:414:in `load'
+activerecord (5.2.0) lib/active_record/relation.rb:200:in `records'
+activerecord (5.2.0) lib/active_record/relation/delegation.rb:41:in `each'
+/usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95:in `block in __usr_local_lib_ruby_gems_______bundler_gems_rails_admin_e_c___f_d_bb_app_views_rails_admin_main_index_html_haml___2051341263419267674_70265727179580'
+haml (5.0.4) lib/haml/helpers/action_view_mods.rb:115:in `block (2 levels) in form_tag_with_haml'
+haml (5.0.4) lib/haml/helpers.rb:292:in `with_tabs'
+haml (5.0.4) lib/haml/helpers/action_view_mods.rb:115:in `block in form_tag_with_haml'
+haml (5.0.4) lib/haml/helpers.rb:690:in `block in haml_bind_proc'
+haml (5.0.4) lib/haml/helpers.rb:382:in `block in capture_haml'
+haml (5.0.4) lib/haml/helpers.rb:667:in `with_haml_buffer'
+haml (5.0.4) lib/haml/helpers.rb:378:in `capture_haml'
+haml (5.0.4) lib/haml/helpers/xss_mods.rb:62:in `capture_haml_with_haml_xss'
+haml (5.0.4) lib/haml/helpers/action_view_mods.rb:45:in `capture_with_haml'
+actionview (5.2.0) lib/action_view/helpers/form_tag_helper.rb:72:in `form_tag'
+haml (5.0.4) lib/haml/helpers/action_view_mods.rb:118:in `form_tag_with_haml'
+haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:19:in `form_tag_with_haml_xss'
+/usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:71:in `__usr_local_lib_ruby_gems_______bundler_gems_rails_admin_e_c___f_d_bb_app_views_rails_admin_main_index_html_haml___2051341263419267674_70265727179580'
+actionview (5.2.0) lib/action_view/template.rb:159:in `block in render'
+activesupport (5.2.0) lib/active_support/notifications.rb:170:in `instrument'
+actionview (5.2.0) lib/action_view/template.rb:354:in `instrument_render_template'
+actionview (5.2.0) lib/action_view/template.rb:157:in `render'
+actionview (5.2.0) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+actionview (5.2.0) lib/action_view/renderer/abstract_renderer.rb:44:in `block in instrument'
+activesupport (5.2.0) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.0) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.0) lib/active_support/notifications.rb:168:in `instrument'
+actionview (5.2.0) lib/action_view/renderer/abstract_renderer.rb:43:in `instrument'
+actionview (5.2.0) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+actionview (5.2.0) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+actionview (5.2.0) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+actionview (5.2.0) lib/action_view/renderer/template_renderer.rb:16:in `render'
+actionview (5.2.0) lib/action_view/renderer/renderer.rb:44:in `render_template'
+actionview (5.2.0) lib/action_view/renderer/renderer.rb:25:in `render'
+actionview (5.2.0) lib/action_view/rendering.rb:103:in `_render_template'
+actionpack (5.2.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+actionview (5.2.0) lib/action_view/rendering.rb:84:in `render_to_body'
+actionpack (5.2.0) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+actionpack (5.2.0) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+actionpack (5.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+actionpack (5.2.0) lib/action_controller/metal/rendering.rb:36:in `render'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:46:in `block (2 levels) in render'
+activesupport (5.2.0) lib/active_support/core_ext/benchmark.rb:14:in `block in ms'
+/usr/local/Cellar/ruby/2.5.0/lib/ruby/2.5.0/benchmark.rb:308:in `realtime'
+activesupport (5.2.0) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:46:in `block in render'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+activerecord (5.2.0) lib/active_record/railties/controller_runtime.rb:31:in `cleanup_view_runtime'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:45:in `render'
+/usr/local/lib/ruby/gems/2.5.0/bundler/gems/remotipart-cd653ddc43bb/lib/remotipart/render_overrides.rb:16:in `render_with_remotipart'
+/usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/config/actions/index.rb:44:in `block (4 levels) in <class:Index>'
+actionpack (5.2.0) lib/action_controller/metal/mime_responds.rb:203:in `respond_to'
+/usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/config/actions/index.rb:42:in `block (2 levels) in <class:Index>'
+/usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/controllers/rails_admin/main_controller.rb:22:in `instance_eval'
+/usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/controllers/rails_admin/main_controller.rb:22:in `index'
+actionpack (5.2.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.0) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.0) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.0) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.0) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.0) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.0) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.0) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.0) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+railties (5.2.0) lib/rails/railtie.rb:190:in `public_send'
+railties (5.2.0) lib/rails/railtie.rb:190:in `method_missing'
+actionpack (5.2.0) lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+actionpack (5.2.0) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack-pjax (1.0.0) lib/rack/pjax.rb:12:in `call'
+/usr/local/lib/ruby/gems/2.5.0/bundler/gems/remotipart-cd653ddc43bb/lib/remotipart/middleware.rb:32:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/story?model_name=story&utf8=%E2%9C%93&f%5Border%5D%5B31183%5D%5Bo%5D=default&f%5Border%5D%5B31183%5D%5Bv%5D%5B%5D=1&f%5Border%5D%5B31183%5D%5Bv%5D%5B%5D=&f%5Border%5D%5B31183%5D%5Bv%5D%5B%5D=&query=" for 127.0.0.1 at 2018-04-23 20:05:24 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story", "utf8"=>"✓", "f"=>{"order"=>{"31183"=>{"o"=>"default", "v"=>["1", "", ""]}}}, "query"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE ((stories.order = 1)) ORDER BY stories.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (37.3ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: near "order": syntax error: SELECT  "stories".* FROM "stories" WHERE ((stories.order = 1)) ORDER BY stories.id desc LIMIT ? OFFSET ?):
+    92:             %th.other.right.shrink= "..."
+    93:           %th.last.shrink
+    94:       %tbody
+    95:         - @objects.each do |object|
+    96:           %tr{class: "#{@abstract_model.param_key}_row #{@model_config.list.with(object: object).row_css_class}"}
+    97:             - if checkboxes
+    98:               %td= check_box_tag "bulk_ids[]", object.id, false
+  
+sqlite3 (1.3.13) lib/sqlite3/database.rb:91:in `initialize'
+sqlite3 (1.3.13) lib/sqlite3/database.rb:91:in `new'
+sqlite3 (1.3.13) lib/sqlite3/database.rb:91:in `prepare'
+activerecord (5.2.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:216:in `block (2 levels) in exec_query'
+activesupport (5.2.0) lib/active_support/dependencies/interlock.rb:48:in `block in permit_concurrent_loads'
+activesupport (5.2.0) lib/active_support/concurrency/share_lock.rb:187:in `yield_shares'
+activesupport (5.2.0) lib/active_support/dependencies/interlock.rb:47:in `permit_concurrent_loads'
+activerecord (5.2.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:213:in `block in exec_query'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:579:in `block (2 levels) in log'
+/usr/local/Cellar/ruby/2.5.0/lib/ruby/2.5.0/monitor.rb:226:in `mon_synchronize'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:578:in `block in log'
+activesupport (5.2.0) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:569:in `log'
+activerecord (5.2.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:212:in `exec_query'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/database_statements.rb:465:in `select'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/database_statements.rb:57:in `select_all'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/query_cache.rb:99:in `block in select_all'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/query_cache.rb:122:in `block in cache_sql'
+/usr/local/Cellar/ruby/2.5.0/lib/ruby/2.5.0/monitor.rb:226:in `mon_synchronize'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/query_cache.rb:108:in `cache_sql'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/query_cache.rb:99:in `select_all'
+activerecord (5.2.0) lib/active_record/querying.rb:41:in `find_by_sql'
+activerecord (5.2.0) lib/active_record/relation.rb:554:in `block in exec_queries'
+activerecord (5.2.0) lib/active_record/relation.rb:578:in `skip_query_cache_if_necessary'
+activerecord (5.2.0) lib/active_record/relation.rb:542:in `exec_queries'
+activerecord (5.2.0) lib/active_record/relation.rb:414:in `load'
+activerecord (5.2.0) lib/active_record/relation.rb:200:in `records'
+activerecord (5.2.0) lib/active_record/relation/delegation.rb:41:in `each'
+/usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95:in `block in __usr_local_lib_ruby_gems_______bundler_gems_rails_admin_e_c___f_d_bb_app_views_rails_admin_main_index_html_haml___2051341263419267674_70265738207060'
+haml (5.0.4) lib/haml/helpers/action_view_mods.rb:115:in `block (2 levels) in form_tag_with_haml'
+haml (5.0.4) lib/haml/helpers.rb:292:in `with_tabs'
+haml (5.0.4) lib/haml/helpers/action_view_mods.rb:115:in `block in form_tag_with_haml'
+haml (5.0.4) lib/haml/helpers.rb:690:in `block in haml_bind_proc'
+haml (5.0.4) lib/haml/helpers.rb:382:in `block in capture_haml'
+haml (5.0.4) lib/haml/helpers.rb:667:in `with_haml_buffer'
+haml (5.0.4) lib/haml/helpers.rb:378:in `capture_haml'
+haml (5.0.4) lib/haml/helpers/xss_mods.rb:62:in `capture_haml_with_haml_xss'
+haml (5.0.4) lib/haml/helpers/action_view_mods.rb:45:in `capture_with_haml'
+actionview (5.2.0) lib/action_view/helpers/form_tag_helper.rb:72:in `form_tag'
+haml (5.0.4) lib/haml/helpers/action_view_mods.rb:118:in `form_tag_with_haml'
+haml (5.0.4) lib/haml/helpers/action_view_xss_mods.rb:19:in `form_tag_with_haml_xss'
+/usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:71:in `__usr_local_lib_ruby_gems_______bundler_gems_rails_admin_e_c___f_d_bb_app_views_rails_admin_main_index_html_haml___2051341263419267674_70265738207060'
+actionview (5.2.0) lib/action_view/template.rb:159:in `block in render'
+activesupport (5.2.0) lib/active_support/notifications.rb:170:in `instrument'
+actionview (5.2.0) lib/action_view/template.rb:354:in `instrument_render_template'
+actionview (5.2.0) lib/action_view/template.rb:157:in `render'
+actionview (5.2.0) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+actionview (5.2.0) lib/action_view/renderer/abstract_renderer.rb:44:in `block in instrument'
+activesupport (5.2.0) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.0) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.0) lib/active_support/notifications.rb:168:in `instrument'
+actionview (5.2.0) lib/action_view/renderer/abstract_renderer.rb:43:in `instrument'
+actionview (5.2.0) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+actionview (5.2.0) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+actionview (5.2.0) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+actionview (5.2.0) lib/action_view/renderer/template_renderer.rb:16:in `render'
+actionview (5.2.0) lib/action_view/renderer/renderer.rb:44:in `render_template'
+actionview (5.2.0) lib/action_view/renderer/renderer.rb:25:in `render'
+actionview (5.2.0) lib/action_view/rendering.rb:103:in `_render_template'
+actionpack (5.2.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+actionview (5.2.0) lib/action_view/rendering.rb:84:in `render_to_body'
+actionpack (5.2.0) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+actionpack (5.2.0) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+actionpack (5.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+actionpack (5.2.0) lib/action_controller/metal/rendering.rb:36:in `render'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:46:in `block (2 levels) in render'
+activesupport (5.2.0) lib/active_support/core_ext/benchmark.rb:14:in `block in ms'
+/usr/local/Cellar/ruby/2.5.0/lib/ruby/2.5.0/benchmark.rb:308:in `realtime'
+activesupport (5.2.0) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:46:in `block in render'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+activerecord (5.2.0) lib/active_record/railties/controller_runtime.rb:31:in `cleanup_view_runtime'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:45:in `render'
+/usr/local/lib/ruby/gems/2.5.0/bundler/gems/remotipart-cd653ddc43bb/lib/remotipart/render_overrides.rb:16:in `render_with_remotipart'
+/usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/config/actions/index.rb:44:in `block (4 levels) in <class:Index>'
+actionpack (5.2.0) lib/action_controller/metal/mime_responds.rb:203:in `respond_to'
+/usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/config/actions/index.rb:42:in `block (2 levels) in <class:Index>'
+/usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/controllers/rails_admin/main_controller.rb:22:in `instance_eval'
+/usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/controllers/rails_admin/main_controller.rb:22:in `index'
+actionpack (5.2.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.0) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.0) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.0) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.0) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.0) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.0) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.0) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.0) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+railties (5.2.0) lib/rails/railtie.rb:190:in `public_send'
+railties (5.2.0) lib/rails/railtie.rb:190:in `method_missing'
+actionpack (5.2.0) lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+actionpack (5.2.0) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack-pjax (1.0.0) lib/rack/pjax.rb:12:in `call'
+/usr/local/lib/ruby/gems/2.5.0/bundler/gems/remotipart-cd653ddc43bb/lib/remotipart/middleware.rb:32:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/story" for 127.0.0.1 at 2018-04-23 20:05:52 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (50.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/_navigation.html.haml (14.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (3.3ms)
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/pjax.html.haml (8.3ms)
+Completed 200 OK in 244ms (Views: 236.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/story?model_name=story&utf8=%E2%9C%93&f%5Bname%5D%5B31554%5D%5Bo%5D=like&f%5Bname%5D%5B31554%5D%5Bv%5D=a&query=&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:05:59 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story", "utf8"=>"✓", "f"=>{"name"=>{"31554"=>{"o"=>"like", "v"=>"a"}}}, "query"=>"", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE ((LOWER(stories.name) LIKE '%a%')) ORDER BY stories.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (55.1ms)
+Completed 200 OK in 88ms (Views: 77.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/story?model_name=story&utf8=%E2%9C%93&query=&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:06:12 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story", "utf8"=>"✓", "query"=>"", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (49.1ms)
+Completed 200 OK in 82ms (Views: 73.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/story?model_name=story&sort=media&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:06:16 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story", "sort"=>"media", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.media_file_name asc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (59.9ms)
+Completed 200 OK in 94ms (Views: 84.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/story?model_name=story&sort=media&sort_reverse=true&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:06:17 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story", "sort"=>"media", "sort_reverse"=>"true", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.media_file_name desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (48.5ms)
+Completed 200 OK in 80ms (Views: 71.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/story?model_name=story&sort=media&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:06:18 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story", "sort"=>"media", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.media_file_name asc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (48.2ms)
+Completed 200 OK in 82ms (Views: 74.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/story?model_name=story&sort=updated_at&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:06:18 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story", "sort"=>"updated_at", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.updated_at desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (52.0ms)
+Completed 200 OK in 87ms (Views: 77.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/story?model_name=story&sort=updated_at&sort_reverse=true&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:06:19 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story", "sort"=>"updated_at", "sort_reverse"=>"true", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (58.8ms)
+Completed 200 OK in 90ms (Views: 82.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/story?model_name=story&sort=created_at&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:06:20 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story", "sort"=>"created_at", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.created_at desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (67.0ms)
+Completed 200 OK in 99ms (Views: 90.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/story?model_name=story&sort=created_at&sort_reverse=true&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:06:21 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story", "sort"=>"created_at", "sort_reverse"=>"true", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.created_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (54.3ms)
+Completed 200 OK in 88ms (Views: 79.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/story?model_name=story&sort=description&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:06:22 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story", "sort"=>"description", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.description asc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (57.1ms)
+Completed 200 OK in 89ms (Views: 80.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/story?model_name=story&sort=description&sort_reverse=true&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:06:22 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story", "sort"=>"description", "sort_reverse"=>"true", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.description desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (50.8ms)
+Completed 200 OK in 86ms (Views: 76.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/story?model_name=story&sort=name&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:06:23 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story", "sort"=>"name", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.name asc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (51.2ms)
+Completed 200 OK in 83ms (Views: 74.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/story?model_name=story&sort=name&sort_reverse=true&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:06:24 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story", "sort"=>"name", "sort_reverse"=>"true", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.name desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (87.7ms)
+Completed 200 OK in 124ms (Views: 115.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/story?model_name=story&sort=id&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:06:24 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story", "sort"=>"id", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (49.5ms)
+Completed 200 OK in 80ms (Views: 72.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/story?model_name=story&sort=id&sort_reverse=true&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:06:25 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story", "sort"=>"id", "sort_reverse"=>"true", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.id asc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (50.8ms)
+Completed 200 OK in 86ms (Views: 74.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/story?model_name=story&sort=id&sort_reverse=true" for 127.0.0.1 at 2018-04-23 20:08:09 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story", "sort"=>"id", "sort_reverse"=>"true"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY "stories"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/story.rb:15
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.id asc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (55.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/_secondary_navigation.html.haml (6.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/_navigation.html.haml (17.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (18.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/pjax.html.haml (6.5ms)
+Completed 200 OK in 283ms (Views: 256.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/story/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:08:12 +0300
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"story"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY "stories"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/story.rb:15
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (2.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_file_upload.html.haml (6.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_submit_buttons.html.haml (10.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (75.8ms)
+Completed 200 OK in 120ms (Views: 109.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/story/1/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:08:20 +0300
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"story", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = ? ORDER BY "stories"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record.rb:16
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_file_upload.html.haml (6.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_submit_buttons.html.haml (7.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (53.4ms)
+Completed 200 OK in 84ms (Views: 75.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/story/3/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:08:23 +0300
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"story", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = ? ORDER BY "stories"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record.rb:16
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (9.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_file_upload.html.haml (5.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_submit_buttons.html.haml (8.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (60.1ms)
+Completed 200 OK in 89ms (Views: 79.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/story/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:08:28 +0300
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"story"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY "stories"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/story.rb:15
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (2.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_file_upload.html.haml (5.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_submit_buttons.html.haml (7.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (59.7ms)
+Completed 200 OK in 93ms (Views: 84.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/story?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:08:30 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"story"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY "stories"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/story.rb:15
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (55.0ms)
+Completed 200 OK in 90ms (Views: 80.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/story/3/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:08:31 +0300
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"story", "id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = ? ORDER BY "stories"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record.rb:16
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_file_upload.html.haml (5.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_submit_buttons.html.haml (8.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (59.9ms)
+Completed 200 OK in 98ms (Views: 85.4ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/admin/story/3/edit" for 127.0.0.1 at 2018-04-23 20:08:34 +0300
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w2kzGlJw2ODZSSEUCXsvhbu8pzHYHxZL1JfZ6sqn2ipjVXIuZLdznWTkieNy3eiM+SjUQCbqNuW5WkHZu0sGAA==", "story"=>{"name"=>"", "description"=>"", "delete_media"=>"0", "order"=>"3"}, "return_to"=>"http://localhost:3000/admin/story", "_save"=>"", "model_name"=>"story", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = ? ORDER BY "stories"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record/abstract_object.rb:23
+  [1m[36mStory Update (0.4ms)[0m  [1m[33mUPDATE "stories" SET "order" = ?, "updated_at" = ? WHERE "stories"."id" = ?[0m  [["order", 3], ["updated_at", "2018-04-23 17:08:34.184461"], ["id", 3]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record/abstract_object.rb:23
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/lib/rails_admin/adapters/active_record/abstract_object.rb:23
+Redirected to http://localhost:3000/admin/story
+Completed 302 Found in 22ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/admin/story" for 127.0.0.1 at 2018-04-23 20:08:34 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY "stories"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/story.rb:15
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (56.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/_navigation.html.haml (16.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (3.6ms)
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/layouts/rails_admin/pjax.html.haml (6.1ms)
+Completed 200 OK in 289ms (Views: 277.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/story/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:08:36 +0300
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"story"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY "stories"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/story.rb:15
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (3.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_file_upload.html.haml (4.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/_submit_buttons.html.haml (8.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (69.5ms)
+Completed 200 OK in 103ms (Views: 93.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/story?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-04-23 20:08:38 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"story"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ config/initializers/rails_admin.rb:7
+  Rendering /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY "stories"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/story.rb:15
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" ORDER BY stories.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml:95
+  Rendered /usr/local/lib/ruby/gems/2.5.0/bundler/gems/rails_admin-e4c657f2d8bb/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (58.3ms)
+Completed 200 OK in 96ms (Views: 86.1ms | ActiveRecord: 0.8ms)
+
+
