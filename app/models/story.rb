@@ -11,8 +11,10 @@ class Story < ApplicationRecord
 
 
   after_initialize do
-    if new_record?
+    if new_record? && Story.exists?
       self.order ||= Story.last.order + 1
+    else
+      self.order = 1
     end
   end
 end
