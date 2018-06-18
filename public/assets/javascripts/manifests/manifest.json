@@ -1,0 +1,19 @@
+{
+  "orientation": "portrait",
+  "background_color": "#141414",
+  "theme_color": "#141414",
+  "name": "S T O R I E S . I S T",
+  "short_name": "STORIES",
+  "display": "standalone",
+  "gcm_sender_id": "482941778795",
+  "gcm_sender_id_comment": "Do not change the GCM Sender ID",
+  "description": "all of materials made by ♥ ig: @aliarifsoydas",
+  "start_url": "/",
+  "icons": [
+	    {
+      "src": "images/app/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
