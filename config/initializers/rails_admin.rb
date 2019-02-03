@@ -38,4 +38,42 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+
+  config.model "Story" do
+    list do
+      field :id
+      field :media do
+        sortable false
+        filterable false
+        pretty_value do
+          if bindings[:object].media.present?
+            ActiveStorage::Current.set(host: "http://localhost:3000") do
+              bindings[:view].tag(:img, {:src => bindings[:object].media.representation(resize: "200x200>").processed.service_url})
+            end
+          end
+        end
+      end
+      field :name
+      field :description
+      field :created_at
+      field :updated_at
+    end
+
+    show do
+      field :id
+      field :media do
+        pretty_value do
+          if bindings[:object].media.present?
+            ActiveStorage::Current.set(host: "http://localhost:3000") do
+              bindings[:view].tag(:img, {:src => bindings[:object].media.representation(resize: "200x200>").processed.service_url})
+            end
+          end
+        end
+      end
+      field :name
+      field :description
+      field :created_at
+      field :updated_at
+    end
+  end
 end
