@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+    </style>
+  </head>
 
-<head>
-</head>
-<main>
   <body>
-    <div class="card-columns">
-      <% @stories.each do |story| %>
-          <div class="card">
-            <% ActiveStorage::Current.set(host: "http://localhost:3000") do %>
-              <a href="<%= url_for(story.media) %>" class="thumbnail">
+    <div class="container">
+      <div class="card-columns">
+        <% @stories.each do |story| %>
+            <div class="card border-0">
+              <% ActiveStorage::Current.set(host: "http://localhost:3000") do %>
                   <%= image_tag story.media.representation(resize: "300x300>").processed.service_url, class:"card-img" %>
-              </a>
-            <% end %>
-          </div>
-      <% end %>
+              <% end %>
+            </div>
+        <% end %>
+      </div>
     </div>
   </body>
-</main>
-
 </html>
