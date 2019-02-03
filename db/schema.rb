@@ -41,10 +41,6 @@ ActiveRecord::Schema.define(version: 2018_04_23_164926) do
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "media_file_name"
-    t.string "media_content_type"
-    t.integer "media_file_size"
-    t.datetime "media_updated_at"
     t.integer "order"
   end
 
