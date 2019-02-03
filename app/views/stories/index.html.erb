@@ -102,11 +102,13 @@
       <div class="row">
         <% @stories.each do |story| %>
           <div class="column" style="background-color:#303030;">
-            <a href="<%= story.media.url %>" data-fancybox="stories">
-              <picture>
-                <%= image_tag story.media.url, class: "preview", style: 'height:auto; width:100%;'%>
-              </picture>
-            </a>
+            <% ActiveStorage::Current.set(host: "http://localhost:3000") do %>
+              <a href="<%= url_for(story.media) %>" data-fancybox="stories">
+                <picture>
+                  <%= image_tag story.media.representation(resize: "300x300>").processed.service_url, class: "preview", style: 'height:auto; width:100%;'%>
+                </picture>
+              </a>
+            <% end %>
           </div>
         <% end %>
       </div>
