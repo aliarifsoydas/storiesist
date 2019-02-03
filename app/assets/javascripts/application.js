@@ -13,7 +13,7 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-//= require_tree ../../../vendor/assets/workers/.
-//= require_tree ../../../vendor/assets/webfonts/.
-//= require_tree ../../../vendor/assets/plug/.
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
 //= require_tree .

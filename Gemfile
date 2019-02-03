@@ -37,6 +37,8 @@ gem 'remotipart', '~> 1.4.2'
 gem 'rails_admin', '~> 1.4.2'
 gem 'rails_admin_rollincode', '~> 1.2.1'
 gem "devise"
+gem 'bootstrap', '~> 4.2', '>= 4.2.1'
+gem 'jquery-rails'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
